@@ -1,0 +1,39 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+body {
+  margin-top:120px;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 60px;
+}
+#footer {
+  background-color: #eee;
+}
+
+.navbar-inverse .navbar-inner {
+  background-color: #0b444b;
+  background-image: -moz-linear-gradient(top, #0b444b, #0b444b);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0b444b), to(#0b444b));
+  background-image: -webkit-linear-gradient(top, #0b444b, #0b444b);
+  background-image: -o-linear-gradient(top, #0b444b, #0b444b);
+  background-image: linear-gradient(to bottom, #0b444b, #0b444b);
+  background-repeat: repeat-x;
+  border-color: #0b444b;
+}
