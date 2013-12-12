@@ -8,11 +8,11 @@
     = csrf_meta_tags
     = yield(:head)
   %body
+    = render 'shared/header'
     #wrap
       .container
-        %header
-          .navbar.navbar-inverse.navbar-fixed-top
-            .navbar-inner
-              = image_tag 'banner.jpg'
+        .row
+          .col-md-12
             = yield
-    = render :partial => 'shared/footer'
+    #push
+    = render 'shared/footer'

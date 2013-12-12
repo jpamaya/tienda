@@ -1,1 +1,196 @@
-%h1 Tienda
+%h1
+  Productos
+.container
+  %h1 Bootstrap 3 Responsive Image Grid
+  %hr/
+  %h2 Non-stacking grid example
+  %p.lead
+    Uses the tiny
+    %code .col-*
+    grid classes
+  %p
+    This layout displays
+    = succeed "." do
+      %b 4 images per row
+    %code img-responsive
+    CSS class. As browser width shrinks, the columns and images scale down accordingly...
+  .row
+    .col-xs-3
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-xs-3
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-xs-3
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-xs-3
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-xs-3
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-xs-3
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-xs-3
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-xs-3
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-xs-3
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-xs-3
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-xs-3
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-xs-3
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+  %p This demonstrates a completely percentage-based responsive (A.K.A. "fluid") layout. The negative aspect of this layout is that it starts to look like the last line of an eye chart at smaller widths.
+  %p Since the "eye chart" aspect isn't really a good thing, let's see how we can use Bootstrap's three powerful grid sizes to improve our design...
+  %br/
+  %br/
+  %hr/
+  %h2 4-3-2 grid example
+  %p.lead Uses all 3 grid sizes
+  %p
+    Rather that simply scaling down image size proportionally as the browser size shrinks, a better responsive design would adjust and re-layout the image grid accordingly. The following example uses this technique. This layout shows
+    %b 4 columns
+    on large (ie: desktop) displays. As screen width shrinks on smaller (ie: tablets),
+    %b 3 columns
+    are displayed. At the smallest widths (ie: mobile phones), only
+    %b 2 columns
+    are displayed.
+  .row
+    .col-lg-3.col-sm-4.col-xs-6
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-lg-3.col-sm-4.col-xs-6
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-lg-3.col-sm-4.col-xs-6
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-lg-3.col-sm-4.col-xs-6
+      %a.thumbnail.pull-left{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-lg-3.col-sm-4.col-xs-6
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-lg-3.col-sm-4.col-xs-6
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-lg-3.col-sm-4.col-xs-6
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-lg-3.col-sm-4.col-xs-6
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-lg-3.col-sm-4.col-xs-6
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-lg-3.col-sm-4.col-xs-6
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-lg-3.col-sm-4.col-xs-6
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+    .col-lg-3.col-sm-4.col-xs-6
+      %a.thumbnail{href: "#"}
+        %img.img-responsive{src: "http://placehold.it/350x150"}/
+  %p
+    This improved responsive layout is achieved using Bootstrap's tiny, small and large grid sizes. By combining use of the
+    = succeed "," do
+      %code col-*
+    %code col-sm-*
+    and
+    %code col-lg-*
+    CSS class. Just like before, the images scale down accordingly, but now our column layout adjusts accordingly too. The
+    column adjustment occurs at pre-defined "breakpoints" that are defined on the Bootstrap CSS media queries. These breakpoints align with common device sizes and widths.
+  %p
+    Behold the power of the Bootstrap 3's
+    %b mobile first
+    grid! Now we can come up with even more combinations.
+  %br/
+  %br/
+  %hr/
+  %h2 6-4-3 grid example
+  %p.lead 6 columns on desktop, 4 columns on tablets, 3 columns on phones
+  .row
+    .col-lg-2.col-sm-3.col-xs-4
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/200x200"}/
+    .col-lg-2.col-sm-3.col-xs-4
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/200x200"}/
+    .col-lg-2.col-sm-3.col-xs-4
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/200x200"}/
+    .col-lg-2.col-sm-3.col-xs-4
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/200x200"}/
+    .col-lg-2.col-sm-3.col-xs-4
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/200x200"}/
+    .col-lg-2.col-sm-3.col-xs-4
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/200x200"}/
+    .col-lg-2.col-sm-3.col-xs-4
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/200x200"}/
+    .col-lg-2.col-sm-3.col-xs-4
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/200x200"}/
+    .col-lg-2.col-sm-3.col-xs-4
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/200x200"}/
+    .col-lg-2.col-sm-3.col-xs-4
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/200x200"}/
+    .col-lg-2.col-sm-3.col-xs-4
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/200x200"}/
+    .col-lg-2.col-sm-3.col-xs-4
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/200x200"}/
+  %hr/
+  %br/
+  %br/
+  %h2 3-2-1 grid example
+  %p.lead 3 columns on desktop, 2 columns on tablets, 1 columns on phones
+  .row
+    .col-lg-4.col-sm-6.col-xs-12
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/800x600"}/
+    .col-lg-4.col-sm-6.col-xs-12
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/800x600"}/
+    .col-lg-4.col-sm-6.col-xs-12
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/800x600"}/
+    .col-lg-4.col-sm-6.col-xs-12
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/800x600"}/
+    .col-lg-4.col-sm-6.col-xs-12
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/800x600"}/
+    .col-lg-4.col-sm-6.col-xs-12
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/800x600"}/
+    .col-lg-4.col-sm-6.col-xs-12
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/800x600"}/
+    .col-lg-4.col-sm-6.col-xs-12
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/800x600"}/
+    .col-lg-4.col-sm-6.col-xs-12
+      %a{href: "#"}
+        %img.thumbnail.img-responsive{src: "http://placehold.it/800x600"}/
+  %hr/
+  %br/
+  %br/
